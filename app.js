@@ -65,7 +65,8 @@ button.addEventListener("click", (e) => {
 
   // dblclick
   li.addEventListener("dblclick", () => {
-    li.style.background = "rgb(204, 40, 204, 0.5)";
+    li.style.background = "rgb(61 61 61 / 50%)";
+    li.style.color = "gold";
   });
 
   img.addEventListener("click", () => {
