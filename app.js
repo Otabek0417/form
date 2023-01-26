@@ -60,7 +60,7 @@ button.addEventListener("click", (e) => {
   let img = document.createElement("img");
   img.setAttribute("src", "delete.svg");
   img.style = `width:20px; height:16px; position: absolute;
-  right: 480px;`;
+  right: 7px;`;
   li.appendChild(img);
 
   img.addEventListener("click", () => {
