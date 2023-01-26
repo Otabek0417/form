@@ -63,6 +63,11 @@ button.addEventListener("click", (e) => {
   right: 7px;`;
   li.appendChild(img);
 
+  // dblclick
+  li.addEventListener("dblclick", () => {
+    li.style.background = "rgb(204, 40, 204, 0.5)";
+  });
+
   img.addEventListener("click", () => {
     li.remove();
   });
@@ -70,7 +75,7 @@ button.addEventListener("click", (e) => {
   li.style = `
   list-style: none;
     margin-bottom: 10px;
-    background: burlywood;
+    background: rgb(204, 204, 204, 0.5);
     width: 300px;
     height: 50px;
     border: 2px solid #866339;

@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cagliostro&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&display=swap");
+
 body {
   font-family: "Cagliostro", sans-serif;
   font-weight: 500;
@@ -56,6 +58,7 @@ h1 {
   font-size: 30px;
   border-radius: 10px;
   background-color: rgb(204, 204, 204, 0.5);
+  user-select: none;
 }
 
 .input:focus {
