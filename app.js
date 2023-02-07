@@ -4,6 +4,7 @@ const button = document.querySelector(".button");
 const list = document.querySelector("ul");
 const body = document.querySelector("body");
 
+// linear-gradient
 const values = [
   "0",
   "1",
@@ -63,10 +64,25 @@ button.addEventListener("click", (e) => {
   right: 7px;`;
   li.appendChild(img);
 
+  // let text = document.createElement("img");
+  // text.setAttribute("scr", "delete.png");
+  // text.style = `width:20px; height:16px; position: absolute;
+  // right: 55px;`;
+  // li.appendChild(text);
+  // text.addEventListener("click", () => {
+  // });
+
   // dblclick
+  let add = true;
   li.addEventListener("dblclick", () => {
-    li.style.background = "rgb(61 61 61 / 50%)";
-    li.style.color = "gold";
+    if (add) {
+      li.style.color = "gold";
+      li.style.background = "rgb(61 61 61 / 50%)";
+    } else {
+      li.style.color = "#fff";
+      li.style.background = "rgba(204, 204, 204, 0.5)";
+    }
+    add = !add;
   });
 
   img.addEventListener("click", () => {
